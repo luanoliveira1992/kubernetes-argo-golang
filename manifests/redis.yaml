@@ -93,8 +93,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   rules:
-  - host: 
-    - todo-app.info
+  - host: todo-app.info
     http:
       paths:
       - path: /
