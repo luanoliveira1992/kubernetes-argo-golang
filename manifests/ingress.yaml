@@ -1,0 +1,14 @@
+apiVersion: netwotking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+   name: todoapp-ingress
+   namespace: app
+spec:
+  rule:
+  - host: todoapp.com
+    http:
+      paths:
+      - backend:
+          serviceName: todoapp
+          servicePort: 3000
+    
